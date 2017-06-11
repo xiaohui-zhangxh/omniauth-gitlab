@@ -29,7 +29,7 @@ module OmniAuth
       end
 
       def raw_info
-        @raw_info ||= access_token.get('/api/v3/user').parsed
+        @raw_info ||= access_token.get('/api/v4/user').parsed
       end
 
       private
